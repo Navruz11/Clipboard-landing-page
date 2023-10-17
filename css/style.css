@@ -5,6 +5,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+.content_container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
 html {
   font-size: 62.5%;
@@ -51,6 +55,7 @@ a:focus {
   color: var(--color-dark);
   text-decoration: none;
 }
+
 a:hover {
   color: #5dccbb;
 }
@@ -68,30 +73,34 @@ a:hover {
   padding: 1.25rem 3rem;
   margin: 0 1rem;
 }
+
 @media (max-width: 480px) {
   .btn {
     font-size: 1.6rem;
     margin: 1rem 1rem;
   }
 }
+
 .btn--primary {
   background-color: var(--color-primary);
   box-shadow: 0px 5px 5px 0px rgba(38, 186, 64, 0.25);
 }
+
 .btn--primary:hover {
   background-color: #5dccbb;
 }
+
 .btn--secondary {
   background-color: var(--color-secondary);
   box-shadow: 0px 5px 5px 0px rgba(96, 115, 255, 0.25);
 }
+
 .btn--secondary:hover {
   background-color: #8896ff;
 }
 
 .container {
   max-width: 1440px;
-  height: 100vh;
   margin: 0 auto;
 }
 
@@ -100,6 +109,7 @@ a:hover {
   background-position: top;
   background-repeat: no-repeat;
   text-align: center;
+  background-size: cover;
 }
 @media (max-width: 480px) {
   .header {
@@ -423,17 +433,20 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+
 @media (max-width: 480px) {
   .download__buttons {
     flex-direction: column;
   }
 }
 
+
 .footer {
   background-color: #f5f6f8;
   color: var(--color-dark);
   font-size: var(--font-size-sm);
 }
+
 .footer__container {
   width: 75%;
   height: 150px;
@@ -441,6 +454,7 @@ a:hover {
   display: flex;
   align-items: center;
 }
+
 @media (max-width: 1024px) {
   .footer__container {
     width: 90%;
